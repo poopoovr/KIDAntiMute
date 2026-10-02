@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>KIDAntiMute</AssemblyName>
+    <RootNamespace>KIDAntiMute</RootNamespace>
+
+    <GameAssemblyPath>C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\Gorilla Tag_Data\Managed</GameAssemblyPath>
+    <BepInExAssemblyPath>C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\BepInEx\core</BepInExAssemblyPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameAssemblyPath)\Assembly-CSharp.dll</HintPath>
+    </Reference>
+
+    <Reference Include="BepInEx">
+      <HintPath>$(BepInExAssemblyPath)\BepInEx.dll</HintPath>
+    </Reference>
+
+    <Reference Include="0Harmony">
+      <HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameAssemblyPath)\UnityEngine.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameAssemblyPath)\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
